@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<title>&lt;hyper-card&gt; Web Component</title>
+		<style>
+		/* Demo styles */
+		body {
+			font-family: system-ui, sans-serif;
+		}
+
+		.demo-card {
+			margin: 4em;
+			display: block;
+			font-weight: bold;
+			padding: 1em;
+			text-align: right;
+			color: #181a1a;
+
+			width:  300px;
+			height: 400px;
+			box-shadow: 0 1px 5px #00000099;
+
+			border-radius: 10px;
+			background-color: #222;
+			background-size: cover;
+		}
+		</style>
+		<script type="module" src="hypercard.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>&lt;hyper-card&gt;  Web Component</h1>
+		</header>
+		<main>
+			<p><a href="https://github.com/zachleat/hypercard">Back to the Source Code</a></p>
+			<p>Full credit to the <a href="https://codepen.io/markmiro/pen/wbqMPa">3D card hover effect CodePen from Mark Miro</a>.</p>
+
+			<hyper-card class="demo-card"></hyper-card>
+		</main>
+	</body>
+</html>

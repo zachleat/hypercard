@@ -1,0 +1,26 @@
+{
+  "name": "@zachleat/hypercard",
+  "version": "1.0.0",
+  "description": "Web component to add a three-dimensional hover effect to a card.",
+  "main": "hypercard.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "npx http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachleat/hypercard.git"
+  },
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachleat/hypercard/issues"
+  },
+  "homepage": "https://github.com/zachleat/hypercard#readme"
+}
