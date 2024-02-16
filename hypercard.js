@@ -21,6 +21,7 @@ class HyperCard extends HTMLElement {
 		transition-property: transform, box-shadow;
 		transition-timing-function: ease-out;
 		transform: rotate3d(0);
+		overflow: clip;
 	}
 
 	:host(.${HyperCard.classes.active}) {
