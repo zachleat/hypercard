@@ -16,7 +16,8 @@ class HyperCard extends HTMLElement {
 	static css = `
 @media (prefers-reduced-motion: no-preference) {
 	:host {
-		position: relative;
+		/* Useful if you want a different parent to create the stacking context */
+		position: var(--hypercard-position, relative);
 		transition-duration: 300ms;
 		transition-property: transform, box-shadow;
 		transition-timing-function: ease-out;
@@ -29,16 +30,19 @@ class HyperCard extends HTMLElement {
 		box-shadow: 0 5px 20px 5px #00000044;
 	}
 
-	:host(:not(.${HyperCard.classes.active})) .glow {
-		display: none;
-	}
-	:host(.${HyperCard.classes.active}) .glow {
+	:host .glow {
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		z-index: var(--hypercard-glow-zindex, 0);
 		left: 0;
 		top: 0;
+		right: 0;
+		bottom: 0;
 		background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+		pointer-events: none;
+	}
+
+	:host(:not(.${HyperCard.classes.active})) .glow {
+		display: none;
 	}
 }
 `;
