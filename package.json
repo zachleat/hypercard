@@ -1,6 +1,6 @@
 {
   "name": "@zachleat/hypercard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web component to add a three-dimensional hover effect to a card.",
   "main": "hypercard.js",
   "publishConfig": {
