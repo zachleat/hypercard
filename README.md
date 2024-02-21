@@ -2,7 +2,7 @@
 
 A web component to add a three-dimensional hover effect to any arbitrary content.
 
-**Full credit to this [3D card hover effect CodePen from Mark Miro](https://codepen.io/markmiro/pen/wbqMPa).**
+**Full credit to this [3D card hover effect CodePen](https://codepen.io/markmiro/pen/wbqMPa) from [Mark Mironyuk](https://www.markmiro.com/).**
 
 * [Demo](https://zachleat.github.io/hypercard/demo.html)
 	* In use on the registration flow for [`conf.11ty.dev`](https://conf.11ty.dev/).
