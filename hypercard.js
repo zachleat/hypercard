@@ -16,6 +16,7 @@ class HyperCard extends HTMLElement {
 	static css = `
 @media (prefers-reduced-motion: no-preference) {
 	:host {
+		--_hypercard-scale: var(--hypercard-scale, 1.07);
 		/* Useful if you want a different parent to create the stacking context */
 		position: var(--hypercard-position, relative);
 		transition-duration: 300ms;
@@ -72,6 +73,7 @@ class HyperCard extends HTMLElement {
 		this.bindEvents();
 	}
 
+	// Full credit to this: https://codepen.io/markmiro/pen/wbqMPa
 	rotateToMouse(e, bounds) {
 		const mouseX = e.clientX;
 		const mouseY = e.clientY;
@@ -85,7 +87,7 @@ class HyperCard extends HTMLElement {
 		const distance = Math.sqrt(center.x**2 + center.y**2);
 
 		this.style.transform = `
-			scale3d(var(--hypercard-scale, 1.07), var(--hypercard-scale, 1.07), var(--hypercard-scale, 1.07))
+			scale3d(var(--_hypercard-scale), var(--_hypercard-scale), var(--_hypercard-scale))
 			rotate3d(
 				${center.y / 100},
 				${-center.x / 100},
