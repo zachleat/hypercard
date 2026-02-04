@@ -36,3 +36,7 @@ The default value is `1.07`.
 ```html
 <hyper-card style="--hypercard-scale: 1.03">Hello.</hyper-card>
 ```
+
+## Changelog
+
+- `v2.0.0` changes default perspective, configurable via `--hypercard-perspective`. Thanks @chriskirknielsen! #1
