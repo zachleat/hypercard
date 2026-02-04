@@ -39,4 +39,4 @@ The default value is `1.07`.
 
 ## Changelog
 
-- `v2.0.0` changes default perspective, configurable via `--hypercard-perspective`. Thanks @chriskirknielsen! #1
+- `v2.0.0` changes default perspective, configurable via `--hypercard-perspective`. Thanks [@chriskirknielsen](https://github.com/chriskirknielsen) (via [#1](https://github.com/zachleat/hypercard/pull/1))!
