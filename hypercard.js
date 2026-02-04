@@ -18,6 +18,7 @@ class HyperCard extends HTMLElement {
 	:host {
 		--_hypercard-scale: var(--hypercard-scale, 1.07);
 		--_hypercard-perspective: var(--hypercard-perspective, min(2000px, 100vw));
+		--_hypercard-glow-opacity: var(--hypercard-glow-opacity, 0.3);
 		/* Useful if you want a different parent to create the stacking context */
 		position: var(--hypercard-position, relative);
 		transition-duration: 300ms;
@@ -39,7 +40,7 @@ class HyperCard extends HTMLElement {
 		top: 0;
 		right: 0;
 		bottom: 0;
-		background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+		background-image: radial-gradient(circle at 50% -20%, rgb(255 255 255 / var(--_hypercard-glow-opacity)), #0000000f);
 		pointer-events: none;
 	}
 
@@ -103,7 +104,7 @@ class HyperCard extends HTMLElement {
 				circle at
 				${center.x * 2 + bounds.width/2}px
 				${center.y * 2 + bounds.height/2}px,
-				#ffffff55,
+				rgb(255 255 255 / var(--_hypercard-glow-opacity)),
 				#0000000f
 			)
 		`;
