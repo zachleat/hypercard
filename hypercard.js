@@ -17,6 +17,7 @@ class HyperCard extends HTMLElement {
 @media (prefers-reduced-motion: no-preference) {
 	:host {
 		--_hypercard-scale: var(--hypercard-scale, 1.07);
+		--_hypercard-perspective: var(--hypercard-perspective, min(2000px, 100vw));
 		/* Useful if you want a different parent to create the stacking context */
 		position: var(--hypercard-position, relative);
 		transition-duration: 300ms;
@@ -87,6 +88,7 @@ class HyperCard extends HTMLElement {
 		const distance = Math.sqrt(center.x**2 + center.y**2);
 
 		this.style.transform = `
+			perspective(var(--_hypercard-perspective))
 			scale3d(var(--_hypercard-scale), var(--_hypercard-scale), var(--_hypercard-scale))
 			rotate3d(
 				${center.y / 100},
