@@ -37,6 +37,23 @@ The default value is `1.07`.
 <hyper-card style="--hypercard-scale: 1.03">Hello.</hyper-card>
 ```
 
+### Make it perspectivier (change amount of tilt)
+
+The default value is `min(2000px, 100vw)`.
+
+```html
+<hyper-card style="--hypercard-perspective: 20vw">Hello.</hyper-card>
+```
+
+### Make the glow more or less opaque
+
+The default value is `0.03`.
+
+```html
+<hyper-card style="--hypercard-perspective: 1.03">Hello.</hyper-card>
+```
+
 ## Changelog
 
+- `v2.0.1` adds `--hypercard-glow-opacity`. Thanks [@ZackBoe](https://github.com/ZackBoe) (via [#1](https://github.com/zachleat/hypercard/pull/2))!
 - `v2.0.0` changes default perspective, configurable via `--hypercard-perspective`. Thanks [@chriskirknielsen](https://github.com/chriskirknielsen) (via [#1](https://github.com/zachleat/hypercard/pull/1))!
