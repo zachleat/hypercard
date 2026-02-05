@@ -50,7 +50,7 @@ The default value is `min(2000px, 100vw)`.
 The default value is `0.03`.
 
 ```html
-<hyper-card style="--hypercard-perspective: 1.03">Hello.</hyper-card>
+<hyper-card style="--hypercard-glow-opacity: 1.03">Hello.</hyper-card>
 ```
 
 ## Changelog
