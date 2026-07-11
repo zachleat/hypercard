@@ -42,10 +42,13 @@ class HyperCard extends HTMLElement {
 		bottom: 0;
 		background-image: radial-gradient(circle at 50% -20%, rgb(255 255 255 / var(--_hypercard-glow-opacity)), #0000000f);
 		pointer-events: none;
+		transition-duration: 300ms;
+		transition-property: opacity;
+		transition-timing-function: ease-out;
 	}
 
 	:host(:not(.${HyperCard.classes.active})) .glow {
-		display: none;
+		opacity: 0;
 	}
 }
 `;
