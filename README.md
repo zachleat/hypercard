@@ -55,6 +55,7 @@ The default value is `0.03`.
 
 ## Changelog
 
-- `v2.0.2` better transition on hover. Thanks [@chriskirknielsen](https://github.com/ZackBoe) (via [#3](https://github.com/zachleat/hypercard/pull/3))!
+- `v2.0.3` adds `--hypercard-glow-color`. Thanks [@chriskirknielsen](https://github.com/chriskirknielsen) (via [#5](https://github.com/zachleat/hypercard/pull/5))!
+- `v2.0.2` better transition on hover. Thanks [@chriskirknielsen](https://github.com/chriskirknielsen) (via [#3](https://github.com/zachleat/hypercard/pull/3))!
 - `v2.0.1` adds `--hypercard-glow-opacity`. Thanks [@ZackBoe](https://github.com/ZackBoe) (via [#2](https://github.com/zachleat/hypercard/pull/2))!
 - `v2.0.0` changes default perspective, configurable via `--hypercard-perspective`. Thanks [@chriskirknielsen](https://github.com/chriskirknielsen) (via [#1](https://github.com/zachleat/hypercard/pull/1))!
