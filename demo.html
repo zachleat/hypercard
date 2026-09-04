@@ -7,6 +7,14 @@
 		<title>&lt;hyper-card&gt; Web Component</title>
 		<style>
 		/* Demo styles */
+		html,body {
+			margin: 0;
+		}
+		main {
+			width: min-content;
+			padding: 1em;
+			margin-inline: auto;
+		}
 		body {
 			font-family: system-ui, sans-serif;
 			background-color: #222;
@@ -35,9 +43,31 @@
 		<script type="module" src="hypercard.js"></script>
 	</head>
 	<body>
-		<header>
-			<h1>&lt;hyper-card&gt;  Web Component</h1>
-		</header>
+
+<!-- zachleat nav (2026-09-04) -->
+<style>
+.z1{all:initial;--z1-bg:light-dark(#f4f6f4d9,#1e201ed9);--z1-bgs:light-dark(#fff,#1b1b1b);--z1-fg:light-dark(#222,#f2f2f2);--z1-mu:light-dark(#525252,#a9a9a9);--z1-bd:light-dark(#d2ded2,#2f3a2f);--z1-gr:light-dark(#4caf50,#6cc470);--z1-pr:light-dark(#3c603c,#9ccf9f);--z1-ac:light-dark(#f525e9,#ff6df5);--z1-ib:light-dark(#0000000d,#ffffff14);--z1-r:.25em;--z1-ff:Lato, Numero, system-ui, -apple-system, sans-serif;--z1-fm:Consolas, Monaco, ui-monospace, monospace;box-sizing:border-box;isolation:isolate;color-scheme:light dark;background-color:var(--z1-bg);border-block-end:1px solid var(--z1-bd);color:var(--z1-fg);font-family:var(--z1-ff);text-align:start;flex-wrap:wrap;align-items:center;gap:.5em 1.5em;padding:.75em clamp(.75em,3vw,1.5em);line-height:1.4;display:flex}.z1 *,.z1 :before,.z1 :after{all:unset;display:revert;box-sizing:border-box}.z1 a{color:var(--z1-fg);cursor:pointer;text-decoration:underline;text-decoration-color:var(--z1-gr);text-underline-offset:.2em;text-decoration-thickness:.09em}.z1 a:hover,.z1 a:focus,.z1 a:active{color:var(--z1-gr)}.z1 a:focus-visible{outline:2px solid var(--z1-ac);outline-offset:3px;border-radius:var(--z1-r)}@media (height>=30em){.z1{z-index:1;position:sticky;top:0}@supports (backdrop-filter:blur(1px)){.z1{backdrop-filter:saturate(180%)blur(10px)}}}.z1.z1-s{position:static}.z1 .z1-i{border-radius:var(--z1-ir,var(--z1-r));background-color:var(--z1-ib);object-fit:contain;flex-shrink:0;width:1.15em;height:1.15em;display:block;overflow:hidden}.z1 .z1-h{color:var(--z1-pr);flex-shrink:0;align-items:center;gap:.4em;font-weight:700;text-decoration:none;display:inline-flex}.z1 .z1-h:hover{color:var(--z1-gr);text-underline-offset:.2em;text-decoration:underline}.z1 .z1-x{color:var(--z1-mu);font-weight:400}.z1 .z1-h .z1-i{border-radius:var(--z1-ir,50%);width:1.6em;height:1.6em}.z1 .z1-g{flex:12em;min-width:0}.z1 .z1-t{color:var(--z1-fg);margin:0;font-size:1em;font-weight:700;line-height:1.3;display:block}.z1 .z1-p{color:var(--z1-mu);text-wrap:pretty;margin:0;font-size:.8125em;display:block}.z1 .z1-u{flex-wrap:wrap;align-items:center;gap:.25em 1em;margin-inline-start:auto;font-size:.875em;display:flex}.z1 .z1-u a{align-items:center;gap:.4em;display:inline-flex}.z1 .z1-c{font-family:var(--z1-fm);font-size:.9em}.z1 .z1-k{clip-path:inset(50%);white-space:nowrap;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.z1 .z1-k:focus-visible{clip-path:none;background-color:var(--z1-bgs);width:auto;height:auto;margin:0;padding:.25em .5em;position:static;overflow:visible}@media (width<=30em){.z1 .z1-u{flex-basis:100%;margin-inline-start:0}}@media print{.z1{border-block-end-width:0}.z1 .z1-u,.z1 .z1-k{display:none}}
+</style>
+<header class="z1">
+	<a class="z1-k" href="#demo">Skip to the demo</a>
+	<a class="z1-h" href="https://www.zachleat.com/">
+		<img class="z1-i" src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2F/" alt="" width="48" height="48" decoding="async">
+		<span><span class="z1-x">Another </span>zachleat<span class="z1-x"> Demo</span></span>
+	</a>
+	<div class="z1-g">
+		<h1 class="z1-t">&lt;hyper-card&gt;</h1>
+		<p class="z1-p">Web component to add a three-dimensional hover effect to a card.</p>
+	</div>
+	<nav class="z1-u" aria-label="Demo links">
+		<a href="https://github.com/zachleat/hypercard"><img class="z1-i" src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fgithub.com%2Fzachleat%2Fhypercard/" alt="" width="24" height="24" decoding="async">Source</a>
+		<a href="https://www.npmjs.com/package/%40zachleat%2Fhypercard"><img class="z1-i" src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fdocs.npmjs.com%2F/" alt="" width="24" height="24" decoding="async"><code class="z1-c">@zachleat/hypercard</code> on npm</a>
+		<a href="https://npmx.dev/package/%40zachleat%2Fhypercard"><img class="z1-i" src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fnpmx.dev%2Fpackage%2F%2540zachleat%252Fhypercard/" alt="" width="24" height="24" decoding="async">npmx</a>
+		<a href="https://www.zachleat.com/web/hypercard/"><img class="z1-i" src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fweb%2Fhypercard%2F/" alt="" width="24" height="24" decoding="async">Blog post</a>
+		<a href="https://www.zachleat.com/projects/"><img class="z1-i" src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fwww.zachleat.com%2Fprojects%2F/" alt="" width="24" height="24" decoding="async">All Projects</a>
+	</nav>
+</header>
+<!-- /zachleat nav -->
+
 		<main>
 			<p><a href="https://github.com/zachleat/hypercard">Back to the Source Code</a></p>
 			<p>Full credit to the <a href="https://codepen.io/markmiro/pen/wbqMPa">3D card hover effect CodePen from Mark Miro</a>.</p>
